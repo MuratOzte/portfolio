@@ -1,25 +1,37 @@
-import { useState } from 'react'
+import { BrowserRouter } from 'react-router-dom';
 
+import {
+    About,
+    Contact,
+    Experience,
+    Feedbacks,
+    Hero,
+    Navbar,
+    Tech,
+    Works,
+    StarsCanvas,
+} from './components';
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    return (
+        <BrowserRouter>
+            <div className="relative z-0 bg-primary">
+                <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+                    <Navbar />
+                    <Hero />
+                </div>
+                <About />
+                <Experience />
+                <Tech />
+                <Works />
+                <Feedbacks />
+                <div className="relative z-0">
+                    <Contact />
+                    <StarsCanvas />
+                </div>
+            </div>
+        </BrowserRouter>
+    );
 }
 
-export default App
+export default App;
