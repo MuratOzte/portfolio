@@ -1,4 +1,4 @@
-import { useState, useEffect, Suspense } from 'react';
+import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 import { useMediaQuery } from '@mui/material';

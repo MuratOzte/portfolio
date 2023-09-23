@@ -15,7 +15,7 @@ const Hero = () => {
                     <div className="w-5 h-5 rounded-full bg-yellow-500 " />
                     <div className="w-1 sm:h-80 h-40 yellow-gradient" />
                 </div>
-                <div className="flex md:flex-row flex-col justify-s gap-6 md:gap-0 items-start">
+                <div className="flex md:flex-row flex-col justify-s gap-0 md:gap-16 items-start">
                     <div>
                         <h1 className={`${styles.heroHeadText} text-gray-600`}>
                             Hi, I'm{' '}
