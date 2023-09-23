@@ -13,12 +13,12 @@ const Navbar = () => {
     const [toggle, setToggle] = useState(false);
     return (
         <nav
-            className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-yellow-300 `}
+            className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-yellow-300`}
         >
-            <div className="w-full flex justify-between items-center max-w-full mx-auto ">
+            <div className="w-full flex justify-between items-center max-w-full mx-auto bg-yellow-300">
                 <Link
                     to={'/'}
-                    className="flex items-center gap-2"
+                    className="flex items-center gap-2 bg-yellow-300"
                     onClick={() => {
                         setActive('');
                         window.scrollTo(0, 0);
@@ -27,18 +27,20 @@ const Navbar = () => {
                     <img
                         src={logo}
                         alt="logo"
-                        className="w-11 h-11 object-contain "
+                        className="w-11 h-11 object-contain bg-transparent"
                     />
-                    <p className="text-gray-700 text-[18px] font-bold cursor-pointer">
+                    <p className="text-gray-700 text-[18px] font-bold cursor-pointer bg-yellow-300">
                         Murat Öztürk
                     </p>
                 </Link>
-                <ul className="list-none hidden sm:flex flex-row gap-10">
+                <ul className="list-none hidden sm:flex flex-row gap-10 bg-yellow-300">
                     {navLinks.map((el) => (
                         <li key={el.id} onClick={() => setActive(el.title)}>
                             <a
-                                className={`text-gray-700 hover:text-amber-700 text-[18px] font-medium cursor-pointer ${
-                                    active === el.title ? 'underline ' : ''
+                                className={`text-gray-700 hover:text-amber-700 text-[18px] font-medium cursor-pointer bg-yellow-300 ${
+                                    active === el.title
+                                        ? 'underline bg-yellow-300'
+                                        : 'bg-yellow-300'
                                 }`}
                                 href={`#${el.id}`}
                             >
@@ -47,11 +49,11 @@ const Navbar = () => {
                         </li>
                     ))}
                 </ul>
-                <div className="sm:hidden flex flex-1 justify-end items-center">
+                <div className="sm:hidden flex flex-1 justify-end items-center mr-4 bg-yellow-300">
                     <img
                         src={toggle ? close : menu}
                         alt="menu"
-                        className="w-[28px] h-[28px] object-contain cursor-pointer "
+                        className="w-[28px] h-[28px] object-contain cursor-pointer bg-yellow-300"
                         onClick={() => setToggle((prev) => !prev)}
                     />
                 </div>
