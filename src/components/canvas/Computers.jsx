@@ -19,15 +19,17 @@ const Computers = ({ isMobile }) => {
 
 const ComputersCanvas = () => {
     const matches = useMediaQuery('(max-width:700px)');
+    console.log(matches)
     return (
         <Canvas
             frameloop="always"
-            camera={{ position: [0.5, -10, 9.2], fov: 30 }}
+            camera={!matches ? { position: [15.5, 0, 9.2], fov: 21 } :{ position: [15.5, 0, 9.2], fov: 18.8 } }
             gl={{ preserveDrawingBuffer: true }}
         >
             <Suspense>
                 <OrbitControls
                     enableZoom={false}
+                    defa
                     maxPolarAngle={Math.PI / 2}
                     minPolarAngle={Math.PI / 2}
                 />

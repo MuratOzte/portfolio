@@ -22,7 +22,7 @@ const Hero = () => {
                             <span className="text-[#eab308]">Murat</span>
                         </h1>
                         <p
-                            className={`${styles.heroSubText} text-gray-600 mt-3 `}
+                            className={`${styles.heroSubText} text-gray-600 mt-3 z-10`}
                         >
                             I build web applications and user interfaces
                         </p>
@@ -40,7 +40,7 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <div className="absolute xs:bottom-10 bottom:32 w-full justify-center flex items-center bg-transparent">
+                <div className="hidden xs:bottom-10 bottom:32 w-full justify-center md:absolute md:flex items-center bg-transparent">
                     <a href="#about">
                         <div className="w-[32px] h-[64px] rounded-3xl border-4 border-gray-500 flex justify-center items-start p-2">
                             <motion.dev
