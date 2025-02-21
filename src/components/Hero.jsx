@@ -24,7 +24,8 @@ const Hero = () => {
                         <p
                             className={`${styles.heroSubText} text-gray-600 mt-3 z-10`}
                         >
-                            I build web applications and user interfaces
+                            A software developer creating web and mobile
+                            applications, also working on machine learning
                         </p>
                     </div>
                     <div className="w-64 h-64 ml-0 sm:flex-row sm:w-96 sm:h-96 mr-10">
