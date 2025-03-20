@@ -3,6 +3,7 @@ import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
 import ThreeSixtyIcon from '@mui/icons-material/ThreeSixty';
 import { useMediaQuery } from '@mui/material';
+import AnimatedText from './animated/AnimatedText';
 
 const Hero = () => {
     const matches = useMediaQuery('(max-width:700px)');
@@ -17,10 +18,7 @@ const Hero = () => {
                 </div>
                 <div className="flex md:flex-row flex-col justify-s gap-0 md:gap-16 items-start">
                     <div>
-                        <h1 className={`${styles.heroHeadText} text-gray-600`}>
-                            Hi, I'm{' '}
-                            <span className="text-[#eab308]">Murat</span>
-                        </h1>
+                        <AnimatedText text="Hi, I'm Murat"  />
                         <p
                             className={`${styles.heroSubText} text-gray-600 mt-3 z-10`}
                         >
