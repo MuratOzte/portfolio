@@ -49,6 +49,7 @@ const ComputersCanvas = () => {
                     : { position: [15.5, 0, 9.2], fov: 18.8 }
             }
             gl={{ preserveDrawingBuffer: true }}
+            className='rounded-md'
         >
             <Suspense fallback={null}>
                 <Controls />

@@ -4,6 +4,7 @@ import { ComputersCanvas } from './canvas';
 import ThreeSixtyIcon from '@mui/icons-material/ThreeSixty';
 import { useMediaQuery } from '@mui/material';
 import AnimatedText from './animated/AnimatedText';
+import AnimatedParagraf from './animated/AnimatedParagraf';
 
 const Hero = () => {
     const matches = useMediaQuery('(max-width:700px)');
@@ -19,29 +20,16 @@ const Hero = () => {
                 <div className="flex md:flex-row flex-col justify-s gap-0 md:gap-16 items-start">
                     <div>
                         <AnimatedText text="Hi, I'm Murat"  />
-                        <p
-                            className={`${styles.heroSubText} text-gray-600 mt-3 z-10`}
-                        >
-                            A software developer creating web and mobile
-                            applications, also working on machine learning
-                        </p>
+                        <AnimatedParagraf text="A software developer creating web and mobile applications, also working on machine learning" />
                     </div>
-                    <div className="w-64 h-64 ml-0 sm:flex-row sm:w-96 sm:h-96 mr-10">
+                    <div className="w-full h-64 sm:flex-row sm:w-96 sm:h-96 mx-auto">
                         <ComputersCanvas />
-                        <ThreeSixtyIcon
-                            color="action"
-                            style={{
-                                width: '2em',
-                                height: '2em',
-                                marginLeft: 172,
-                            }}
-                        />
                     </div>
                 </div>
 
                 <div className="hidden xs:bottom-10 bottom:32 w-full justify-center md:absolute md:flex items-center bg-transparent">
                     <a href="#about">
-                        <div className="w-[32px] h-[64px] rounded-3xl border-4 border-gray-500 flex justify-center items-start p-2">
+                        <div className="w-[32px] h-[64px] rounded-3xl border-4 border-gray-500 flex justify-center p-2">
                             <motion.dev
                                 animate={{ y: [0, 24, 0] }}
                                 transition={{
