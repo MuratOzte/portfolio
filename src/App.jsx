@@ -12,6 +12,7 @@ import {
     StarsCanvas,
 } from './components';
 
+
 function App() {
     return (
         <BrowserRouter>
@@ -20,7 +21,9 @@ function App() {
                     <Navbar />
                     <Hero />
                 </div>
-                <About />
+                <div>
+                    <About />
+                </div>
                 <Experience />
                 <Tech />
                 <Works />
