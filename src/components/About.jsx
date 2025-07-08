@@ -33,8 +33,17 @@ const About = () => {
                 className="bg-yellow-300 w-full h-screen overflow-hidden"
                 ref={firstContainer}
             >
-                <div className='mt-24' >
-                    <h1 className='bg-yellow-300 text-5xl font-serif font-bold text-gray-700' >Kopernik Yazılım Ajansı</h1>
+                <div className="my-12 mx-8 bg-yellow-300 flex">
+                    <div className="w-1/2">selam</div>
+                    <div className="w-1/2 flex justify-center flex-col items-center bg-yellow-300">
+                        <img
+                            src="https://media.licdn.com/dms/image/v2/D4D0BAQGug8UDNhQ2pw/company-logo_200_200/B4DZd3u_DZHkAI-/0/1750060496120/kopernik_tr_logo?e=1757548800&v=beta&t=dcOstwPhAjlCO_OKpcwaDcuy5n5cg5oz7rMx2vnRORs"
+                            className="w-28 mb-6 rounded-full border border-white shadow-md"
+                        />
+                        <h1 className="bg-yellow-300 text-5xl font-bold text-gray-700">
+                            Kopernik Yazılım Ajansı
+                        </h1>
+                    </div>
                 </div>
             </div>
             <div
