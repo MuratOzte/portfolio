@@ -1,22 +1,50 @@
-import { useState } from 'react';
+import { useMotionValueEvent, useScroll, motion } from 'framer-motion';
+import { useEffect, useState, useRef } from 'react';
 
 const About = () => {
-    return (
-        <div className="w-full h-screen bg-center bg-cover bg-no-repeat bg-yellow-100 flex justify-center">
-            <div className="h-screen w-1 bg-black relative rounded-full shadow-md">
-                <div className="absolute bg-white w-16 h-16 rounded-full -left-[30px] top-3">
-                    <img
-                        src="https://media.licdn.com/dms/image/v2/D4D0BAQGug8UDNhQ2pw/company-logo_200_200/B4DZd3u_DZHkAI-/0/1750060496120/kopernik_tr_logo?e=1756944000&v=beta&t=pQFhu4IGFM-Ja4KVHrDa1_q-CDwBu8C_3y_noESzAlU"
-                        className="rounded-full ring-2 ring-white shadow-xl hover:scale-105 transition-all duration-200"
-                    />
-                    <div className='absolute -left-[55px] top-[18px] text-black text-3xl bg-transparent' >
-                        &#9654;
-                    </div>
-                    <div className='w-[400px] h-[260px] bg-black absolute -left-[450px] -top-5' >
+    const { scrollY } = useScroll();
+    const [scrollPosition, setScrollPosition] = useState(0);
+    useMotionValueEvent(scrollY, 'change', (latest) =>
+        setScrollPosition(latest)
+    );
 
-                    </div>
+    const firstContainer = useRef(null);
+    const secondContainer = useRef(null);
+    const thirdContainer = useRef(null);
+
+    useEffect(() => {
+        if (scrollPosition > 700) {
+            firstContainer.current.style.position = 'sticky ';
+            firstContainer.current.style.top = '0px';
+        }
+        if (scrollPosition > 700 && scrollPosition < 1400) {
+            secondContainer.current.style.position = 'sticky ';
+            secondContainer.current.style.top = '0px';
+        }
+        if (scrollPosition > 1400 && scrollPosition < 2100) {
+            thirdContainer.current.style.position = 'sticky ';
+            thirdContainer.current.style.top = '0px';
+        }
+    }, [scrollPosition]);
+
+    return (
+        <div>
+            <div
+                className="bg-yellow-300 w-full h-screen overflow-hidden"
+                ref={firstContainer}
+            >
+                <div className='mt-24' >
+                    <h1 className='bg-yellow-300 text-5xl font-serif font-bold text-gray-700' >Kopernik Yazılım Ajansı</h1>
                 </div>
             </div>
+            <div
+                ref={secondContainer}
+                className="bg-yellow-400 w-full h-screen z-10 overflow-hidden"
+            ></div>
+            <div
+                ref={thirdContainer}
+                className="bg-yellow-300 w-full h-screen z-20"
+            ></div>
         </div>
     );
 };
