@@ -11,7 +11,7 @@ const Hero = () => {
     return (
         <div className="relative mx-auto w-full h-screen bg-yellow-100 ">
             <div
-                className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row  items-start gap-5 justify-start`}
+                className={`${styles.paddingX} absolute inset-0 top-[60px] max-w-7xl mx-auto flex flex-row  items-start gap-5 justify-start`}
             >
                 <div className="flex flex-col justify-center items-center mt-14">
                     <div className="w-5 h-5 rounded-full bg-yellow-500 " />
@@ -27,7 +27,7 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <div className="hidden xs:bottom-10 bottom:32 w-full justify-center md:absolute md:flex items-center bg-transparent">
+                <div className="hidden xs:bottom-40 bottom:32 w-full justify-center md:absolute md:flex items-center bg-transparent">
                     <a href="#about">
                         <div className="w-[32px] h-[64px] rounded-3xl border-4 border-gray-500 flex justify-center p-2">
                             <motion.dev
