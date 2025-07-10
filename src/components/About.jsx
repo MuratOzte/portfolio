@@ -38,7 +38,12 @@ const About = () => {
                 ref={firstContainer}
             >
                 <div className="my-12 mx-8 bg-yellow-300 flex">
-                    <div className="w-1/2">selam</div>
+                    <div className="w-1/2 flex flex-col items-center justify-center bg-yellow-300 mt-24">
+                        <div className='bg-yellow-300 flex gap-8'>
+                            <h1 className='bg-yellow-300' >Front-end Developer Intern</h1>
+                            <h1 className='bg-gray-600 px-2 py-1 rounded-md shadow-md' >02/2025 - 05/2025</h1>
+                        </div>
+                    </div>
                     <div className="w-1/2 flex flex-col items-center justify-center bg-yellow-300 mt-24">
                         <a
                             className="bg-yellow-300"
