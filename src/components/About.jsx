@@ -3,8 +3,10 @@ import { useMotionValueEvent, useScroll, motion } from 'framer-motion';
 import { useEffect, useState, useRef } from 'react';
 import { BiCategory } from 'react-icons/bi';
 import { CgWebsite } from 'react-icons/cg';
-import { FaLinkedin } from 'react-icons/fa6';
-import { FaHtml5 } from "react-icons/fa";
+import { FaJs, FaLinkedin, FaReact } from 'react-icons/fa6';
+import { FaCss3, FaHtml5 } from 'react-icons/fa';
+import { IoLogoJavascript } from 'react-icons/io';
+import CompanyHeader from './about/CompanyHeader';
 
 const About = () => {
     const { scrollY } = useScroll();
@@ -39,19 +41,45 @@ const About = () => {
                 ref={firstContainer}
             >
                 <div className="my-12 mx-8 bg-yellow-300 flex ">
-                    <div className='flex flex-col w-1/2 bg-yellow-300' >
-                        <div className="flex flex-col items-center justify-center bg-yellow-300 mt-24">
-                            <div className="bg-yellow-300 flex gap-8 items-center text-xl">
-                                <h1 className="bg-yellow-300 text-gray-600 font-bold">
-                                    Front-end Developer Intern
-                                </h1>
-                                <h1 className="bg-gray-600 px-2 py-1 rounded-md shadow-md">
-                                    02/2025 - 05/2025
-                                </h1>
+                    <div className="flex flex-col w-1/2 bg-yellow-300">
+                        <CompanyHeader title={'Front-end Developer Intern'} date={'02/2025 - 05/2025'}/>
+                        <div className="bg-yellow-300 flex gap-5 justify-center mt-6">
+                            <div className="bg-transparent flex justify-center flex-col items-center">
+                                <FaHtml5
+                                    className="bg-transparent text-orange-500"
+                                    size={64}
+                                />
+                                <span className="bg-transparent text-gray-600 font-semibold text-sm">
+                                    HTML
+                                </span>
                             </div>
-                        </div>
-                        <div className="bg-yellow-300">
-                            <FaHtml5 />
+                            <div className="bg-transparent flex justify-center flex-col items-center">
+                                <FaCss3
+                                    className="bg-transparent text-orange-500"
+                                    size={64}
+                                />
+                                <span className="bg-transparent text-gray-600 font-semibold text-sm">
+                                    HTML
+                                </span>
+                            </div>
+                            <div className="bg-transparent flex justify-center flex-col items-center">
+                                <IoLogoJavascript
+                                    className="bg-transparent text-orange-500"
+                                    size={64}
+                                />
+                                <span className="bg-transparent text-gray-600 font-semibold text-sm">
+                                    HTML
+                                </span>
+                            </div>
+                            <div className="bg-transparent flex justify-center flex-col items-center">
+                                <FaReact
+                                    className="bg-transparent text-orange-500"
+                                    size={64}
+                                />
+                                <span className="bg-transparent text-gray-600 font-semibold text-sm">
+                                    HTML
+                                </span>
+                            </div>
                         </div>
                     </div>
                     <div className="w-1/2 flex flex-col items-center justify-center bg-yellow-300 mt-24">
