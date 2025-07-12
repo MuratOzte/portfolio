@@ -55,31 +55,34 @@ const About = () => {
                             </div>
                             <div className="bg-transparent flex justify-center flex-col items-center">
                                 <FaCss3
-                                    className="bg-transparent text-orange-500"
+                                    className="bg-transparent text-blue-500"
                                     size={64}
                                 />
                                 <span className="bg-transparent text-gray-600 font-semibold text-sm">
-                                    HTML
+                                    CSS
                                 </span>
                             </div>
                             <div className="bg-transparent flex justify-center flex-col items-center">
                                 <IoLogoJavascript
-                                    className="bg-transparent text-orange-500"
+                                    className="bg-transparent text-yellow-400"
                                     size={64}
                                 />
                                 <span className="bg-transparent text-gray-600 font-semibold text-sm">
-                                    HTML
+                                    Javascript
                                 </span>
                             </div>
                             <div className="bg-transparent flex justify-center flex-col items-center">
                                 <FaReact
-                                    className="bg-transparent text-orange-500"
+                                    className="bg-transparent text-blue-400"
                                     size={64}
                                 />
                                 <span className="bg-transparent text-gray-600 font-semibold text-sm">
-                                    HTML
+                                    React
                                 </span>
                             </div>
+                        </div>
+                        <div>
+                            şu yapıldı
                         </div>
                     </div>
                     <div className="w-1/2 flex flex-col items-center justify-center bg-yellow-300 mt-24">
