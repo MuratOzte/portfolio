@@ -4,6 +4,7 @@ import { useEffect, useState, useRef } from 'react';
 import { BiCategory } from 'react-icons/bi';
 import { CgWebsite } from 'react-icons/cg';
 import { FaLinkedin } from 'react-icons/fa6';
+import { FaHtml5 } from "react-icons/fa";
 
 const About = () => {
     const { scrollY } = useScroll();
@@ -37,11 +38,20 @@ const About = () => {
                 className="bg-yellow-300 w-full h-screen overflow-hidden"
                 ref={firstContainer}
             >
-                <div className="my-12 mx-8 bg-yellow-300 flex">
-                    <div className="w-1/2 flex flex-col items-center justify-center bg-yellow-300 mt-24">
-                        <div className='bg-yellow-300 flex gap-8'>
-                            <h1 className='bg-yellow-300' >Front-end Developer Intern</h1>
-                            <h1 className='bg-gray-600 px-2 py-1 rounded-md shadow-md' >02/2025 - 05/2025</h1>
+                <div className="my-12 mx-8 bg-yellow-300 flex ">
+                    <div className='flex flex-col w-1/2 bg-yellow-300' >
+                        <div className="flex flex-col items-center justify-center bg-yellow-300 mt-24">
+                            <div className="bg-yellow-300 flex gap-8 items-center text-xl">
+                                <h1 className="bg-yellow-300 text-gray-600 font-bold">
+                                    Front-end Developer Intern
+                                </h1>
+                                <h1 className="bg-gray-600 px-2 py-1 rounded-md shadow-md">
+                                    02/2025 - 05/2025
+                                </h1>
+                            </div>
+                        </div>
+                        <div className="bg-yellow-300">
+                            <FaHtml5 />
                         </div>
                     </div>
                     <div className="w-1/2 flex flex-col items-center justify-center bg-yellow-300 mt-24">
