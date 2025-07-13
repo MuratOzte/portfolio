@@ -7,6 +7,7 @@ import { FaJs, FaLinkedin, FaReact } from 'react-icons/fa6';
 import { FaCss3, FaHtml5 } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io';
 import CompanyHeader from './about/CompanyHeader';
+import CompanyList from './about/CompanyList';
 
 const About = () => {
     const { scrollY } = useScroll();
@@ -42,7 +43,10 @@ const About = () => {
             >
                 <div className="my-12 mx-8 bg-yellow-300 flex ">
                     <div className="flex flex-col w-1/2 bg-yellow-300">
-                        <CompanyHeader title={'Front-end Developer Intern'} date={'02/2025 - 05/2025'}/>
+                        <CompanyHeader
+                            title={'Front-end Developer Intern'}
+                            date={'02/2025 - 05/2025'}
+                        />
                         <div className="bg-yellow-300 flex gap-5 justify-center mt-6">
                             <div className="bg-transparent flex justify-center flex-col items-center">
                                 <FaHtml5
@@ -81,9 +85,7 @@ const About = () => {
                                 </span>
                             </div>
                         </div>
-                        <div>
-                            şu yapıldı
-                        </div>
+                        <CompanyList />
                     </div>
                     <div className="w-1/2 flex flex-col items-center justify-center bg-yellow-300 mt-24">
                         <a
