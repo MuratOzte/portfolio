@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import '../../util/i18n'; 
+import '../../util/i18n';
 
 const LanguageToggle = () => {
     const { i18n, t } = useTranslation();
@@ -28,9 +28,7 @@ const LanguageToggle = () => {
             />
             <label
                 htmlFor="language-toggle"
-                className={`relative w-[150px] h-[60px] rounded-full cursor-pointer transition bg-[${
-                    isEnglish ? '#0d1366' : '#b80404'
-                }]`}
+                className={`relative w-[150px] h-[60px] rounded-full cursor-pointer bg-yellow-400 transition `}
                 id="button"
             >
                 <div
@@ -48,7 +46,7 @@ const LanguageToggle = () => {
                 />
                 <div
                     id="language-text"
-                    className={`absolute top-1/2 text-white font-bold text-[18px] transition-all duration-400 transform -translate-y-1/2 ${
+                    className={`absolute bg-transparent top-1/2 text-white font-bold text-[18px] transition-all duration-400 transform -translate-y-1/2 ${
                         isEnglish ? 'left-[20px]' : 'left-[70px]'
                     }`}
                 >
