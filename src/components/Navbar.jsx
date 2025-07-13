@@ -5,6 +5,7 @@ import { styles } from '../styles';
 import { navLinks } from '../constants/index';
 import { menu, close } from '../assets';
 import logo from '../assets/logo.png';
+import LanguageToggle from './animated/LanguageSwitch';
 
 const Navbar = () => {
     const [active, setActive] = useState('');
@@ -32,11 +33,16 @@ const Navbar = () => {
                         Murat Öztürk
                     </p>
                 </Link>
+                <LanguageToggle />
 
                 {/* Desktop Links */}
                 <ul className="list-none hidden sm:flex flex-row gap-10 bg-yellow-300">
                     {navLinks.map((el) => (
-                        <li key={el.id} onClick={() => setActive(el.title)} className='bg-yellow-300'>
+                        <li
+                            key={el.id}
+                            onClick={() => setActive(el.title)}
+                            className="bg-yellow-300"
+                        >
                             <a
                                 className={`text-gray-700 bg-yellow-300 hover:text-amber-700 text-[18px] font-medium cursor-pointer ${
                                     active === el.title ? 'font-semibold' : ''
@@ -50,7 +56,7 @@ const Navbar = () => {
                 </ul>
 
                 {/* Mobile Menu Button */}
-                <div className="sm:hidden flex flex-1 justify-end items-center mr-4 bg-yellow-300">
+                <div className="sm:hidden flex flex-1 justify-end items-center mr-4 bg-yellow-300 ">
                     <img
                         src={toggle ? close : menu}
                         alt="menu"
