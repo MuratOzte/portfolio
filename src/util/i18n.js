@@ -1,6 +1,8 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
+import trTranslation from '../locales/tr/translation.json';
+import enTranslation from '../locales/en/translation.json';
 
 i18n.use(LanguageDetector)
     .use(initReactI18next)
@@ -11,28 +13,8 @@ i18n.use(LanguageDetector)
             escapeValue: false,
         },
         resources: {
-            en: {
-                translation: {
-                    hero: {
-                        greeting1: "Hi, I'm ",
-                        greeting2: "Murat",
-                        paragraph:
-                            'A software developer creating web and mobile applications, also working on machine learning',
-                        scrollHint: 'Scroll Down',
-                    },
-                },
-            },
-            tr: {
-                translation: {
-                    hero: {
-                        greeting1: "Selam, Ben ",
-                        greeting2: "Murat",
-                        paragraph:
-                            'Web ve mobil uygulamalar geliştiren, aynı zamanda makine öğrenimi üzerinde çalışan bir yazılım geliştiriciyim',
-                        scrollHint: 'Aşağı Kaydır',
-                    },
-                },
-            },
+            en: { translation: enTranslation },
+            tr: { translation: trTranslation },
         },
     });
 

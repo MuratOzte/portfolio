@@ -1,0 +1,8 @@
+{
+  "hero": {
+    "greeting1": "Hi, I'm ",
+    "greeting2": "Murat",
+    "paragraph": "A software developer creating web and mobile applications, also working on machine learning",
+    "scrollHint": "Scroll Down"
+  }
+}

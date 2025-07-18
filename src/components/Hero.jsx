@@ -46,6 +46,7 @@ const Hero = () => {
                                 }}
                                 className="w-3 h-3 rounded-full bg-gray-500 mb-1"
                             />
+                            <p className='text-gray-700 text-sm absolute top-[70px] font-medium'>{t('hero.scrollHint')}</p>
                         </div>
                     </a>
                 </div>
