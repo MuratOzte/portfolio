@@ -28,7 +28,8 @@ const LanguageToggle = () => {
             />
             <label
                 htmlFor="language-toggle"
-                className={`relative w-[150px] h-[60px] rounded-full cursor-pointer bg-yellow-400 transition `}
+                className={`relative w-[150px] h-[60px] rounded-full cursor-pointer bg-[#b80404] transition `}
+                style={{ backgroundColor: !isEnglish ? '#b80404' : '#0d1366' }}
                 id="button"
             >
                 <div
@@ -46,7 +47,7 @@ const LanguageToggle = () => {
                 />
                 <div
                     id="language-text"
-                    className={`absolute bg-transparent top-1/2 text-white font-bold text-[18px] transition-all duration-400 transform -translate-y-1/2 ${
+                    className={`absolute bg-transparent top-1/2 text-white font-bold text-[18px] transition-all duration-400 transform -translate-y-1/2 select-none ${
                         isEnglish ? 'left-[20px]' : 'left-[70px]'
                     }`}
                 >

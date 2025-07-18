@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { styles } from '../../styles';
 
-const AnimatedText = () => {
+const AnimatedText = ({ greeting1, greeting2 }) => {
     const container = {
         hidden: { opacity: 0 },
         visible: (i = 1) => ({
@@ -26,15 +26,15 @@ const AnimatedText = () => {
         },
     };
 
-    const text1 = "Hi, I'm ";
-    const text2 = 'Murat';
+    const text1 = greeting1;
+    const text2 = greeting2;
 
     const lineVariants = {
         hidden: { width: 0 },
         visible: {
             width: '100%',
             transition: {
-                delay: 0.5, 
+                delay: 0.5,
                 type: 'spring',
                 damping: 15,
                 stiffness: 100,

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { styles } from '../../styles';
 
-const AnimatedParagraf = () => {
+const AnimatedParagraf = ({p}) => {
     // Metin animasyonu için X ekseninde kayma ve opacity kullanıyoruz
     const paragraphVariants = {
         hidden: {
@@ -27,8 +27,7 @@ const AnimatedParagraf = () => {
             initial="hidden"
             animate="visible"
         >
-            A software developer creating web and mobile applications, also
-            working on machine learning
+            {p}
         </motion.p>
     );
 };
