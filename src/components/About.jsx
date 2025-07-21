@@ -44,12 +44,13 @@ const About = () => {
         }
     }, [scrollPosition]);
 
-    useEffect(() => {
-        if (isInView) {
-        }
-    }, [isInView]);
-
     const opacity = useTransform(scrollY, [0, 600, 800, 1300], [0, 1, 1, 0]);
+    const scale1 = useTransform(scrollY, [1600, 1900], [1, 0.9]);
+    const blur1 = useTransform(
+        scrollY,
+        [1600, 1900],
+        ['blur(0px)', 'blur(12px)']
+    );
 
     return (
         <div>
@@ -64,8 +65,12 @@ const About = () => {
                 </p>
             </motion.p>
 
-            <div
+            <motion.div
                 className="bg-yellow-300 w-full h-screen overflow-hidden"
+                style={{
+                    scale: scale1,
+                    filter: blur1,
+                }}
                 ref={firstContainer}
             >
                 <div className="my-12 mx-8 bg-yellow-300 flex ">
@@ -174,7 +179,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
             <div
                 ref={secondContainer}
                 className="bg-yellow-400 w-full h-screen z-10 overflow-hidden"
