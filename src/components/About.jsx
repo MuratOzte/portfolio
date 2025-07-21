@@ -1,14 +1,19 @@
-import { Tooltip } from '@mui/material';
-import { useMotionValueEvent, useScroll, motion } from 'framer-motion';
-import { useEffect, useState, useRef } from 'react';
+import {
+    motion,
+    useMotionValueEvent,
+    useScroll,
+    useTransform,
+    useInView,
+} from 'framer-motion';
+import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { BiCategory } from 'react-icons/bi';
 import { CgWebsite } from 'react-icons/cg';
-import { FaJs, FaLinkedin, FaReact } from 'react-icons/fa6';
 import { FaCss3, FaHtml5 } from 'react-icons/fa';
+import { FaLinkedin, FaReact } from 'react-icons/fa6';
 import { IoLogoJavascript } from 'react-icons/io';
 import CompanyHeader from './about/CompanyHeader';
 import CompanyList from './about/CompanyList';
-import { useTranslation } from 'react-i18next';
 
 const About = () => {
     const { scrollY } = useScroll();
@@ -17,10 +22,12 @@ const About = () => {
     useMotionValueEvent(scrollY, 'change', (latest) =>
         setScrollPosition(latest)
     );
-
+    const titleContainer = useRef(null);
     const firstContainer = useRef(null);
     const secondContainer = useRef(null);
     const thirdContainer = useRef(null);
+
+    const isInView = useInView(titleContainer);
 
     useEffect(() => {
         if (scrollPosition > 700) {
@@ -37,11 +44,26 @@ const About = () => {
         }
     }, [scrollPosition]);
 
+    useEffect(() => {
+        if (isInView) {
+        }
+    }, [isInView]);
+
+    const opacity = useTransform(scrollY, [0, 600, 800, 1300], [0, 1, 1, 0]);
+
     return (
         <div>
-            <div className='bg-yellow-300 w-full h-screen overflow-hidden'  >
+            <motion.p
+                ref={titleContainer}
+                style={{ opacity }}
+                className="bg-yellow-300 w-full h-screen overflow-hidden flex justify-center items-center text-8xl sticky top-0 z-30 tracking-wider uppercase font-bold drop-shadow-lg 
+               "
+            >
+                <p className="bg-[url('/src/assets/about-bg/bg-7.jpg')] bg-cover bg-center text-transparent bg-clip-text bg-fixed">
+                    {t('ui.experiences')}
+                </p>
+            </motion.p>
 
-            </div>
             <div
                 className="bg-yellow-300 w-full h-screen overflow-hidden"
                 ref={firstContainer}

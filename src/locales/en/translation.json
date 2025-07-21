@@ -1,4 +1,7 @@
 {
+    "ui": {
+        "experiences": "My Experiences"
+    },
     "hero": {
         "greeting1": "Hi, I'm ",
         "greeting2": "Murat",

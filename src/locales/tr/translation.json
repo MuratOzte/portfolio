@@ -1,4 +1,7 @@
 {
+    "ui": {
+        "experiences": "Tecrübelerim"
+    },
     "hero": {
         "greeting1": "Selam, Ben ",
         "greeting2": "Murat",
