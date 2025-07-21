@@ -8,10 +8,12 @@ import { FaCss3, FaHtml5 } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io';
 import CompanyHeader from './about/CompanyHeader';
 import CompanyList from './about/CompanyList';
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
     const { scrollY } = useScroll();
     const [scrollPosition, setScrollPosition] = useState(0);
+    const { t } = useTranslation();
     useMotionValueEvent(scrollY, 'change', (latest) =>
         setScrollPosition(latest)
     );
@@ -37,6 +39,9 @@ const About = () => {
 
     return (
         <div>
+            <div className='bg-yellow-300 w-full h-screen overflow-hidden'  >
+
+            </div>
             <div
                 className="bg-yellow-300 w-full h-screen overflow-hidden"
                 ref={firstContainer}
@@ -99,7 +104,7 @@ const About = () => {
                             />
                         </a>
                         <h1 className="bg-yellow-300 text-5xl font-bold text-gray-700">
-                            Kopernik Software Agency
+                            {t('kopernikInfo.title')}
                         </h1>
                         <div className="bg-yellow-300 flex justify-center items-center mt-4 space-x-2">
                             <BiCategory

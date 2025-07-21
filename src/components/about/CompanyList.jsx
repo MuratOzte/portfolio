@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { FaHome, FaTwitter, FaGithub, FaCodepen } from 'react-icons/fa';
 
 const messages = [
@@ -9,6 +10,10 @@ const messages = [
 ];
 
 const OrderedListUI = () => {
+    const { t } = useTranslation();
+
+    const messages = t('kopernik', { returnObjects: true });
+
     return (
         <div className="flex flex-col gap-2 bg-transparent">
             {messages.map((msg, i) => (

@@ -1,8 +1,19 @@
 {
-  "hero": {
-    "greeting1": "Selam, Ben ",
-    "greeting2": "Murat",
-    "paragraph": "Web ve mobil uygulamalar geliştiren, aynı zamanda makine öğrenimi üzerinde çalışan bir yazılım geliştiriciyim",
-    "scrollHint": "Aşağı Kaydır"
-  }
+    "hero": {
+        "greeting1": "Selam, Ben ",
+        "greeting2": "Murat",
+        "paragraph": "Web ve mobil uygulamalar geliştiren, aynı zamanda makine öğrenimi üzerinde çalışan bir yazılım geliştiriciyim",
+        "scrollHint": "Aşağı Kaydır"
+    },
+    "kopernik": [
+        "HTML, CSS, JavaScript ve React kullanarak 6'dan fazla responsive ve çok dilli kurumsal web sitesi geliştirdim ve bakımını sağladım.",
+        "Pazarlama ve iletişim amaçlı özel HTML e-posta şablonları oluşturdum.",
+        "Şirketin dahili kullanımı için etkinlik yönetimi web sitesi tasarlayıp geliştirdim; kullanıcı arayüzü ve frontend mantığını oluşturdum.",
+        "Geliştirilen tüm web sitelerinde tarayıcı uyumluluğu ve mobil uyumluluğu sağladım.",
+        "Müşteri projelerinin bakım ve güncellemelerine katkı sağladım; hata düzeltmeleri ve performans iyileştirmeleri gerçekleştirdim."
+    ],
+    "kopernikInfo": {
+        "title": "Kopernik Yazılım Ajansı",
+        "category": "Teknoloji , Bilgi ve Medya"
+    }
 }

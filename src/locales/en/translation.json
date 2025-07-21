@@ -1,8 +1,19 @@
 {
-  "hero": {
-    "greeting1": "Hi, I'm ",
-    "greeting2": "Murat",
-    "paragraph": "A software developer creating web and mobile applications, also working on machine learning",
-    "scrollHint": "Scroll Down"
-  }
+    "hero": {
+        "greeting1": "Hi, I'm ",
+        "greeting2": "Murat",
+        "paragraph": "A software developer creating web and mobile applications, also working on machine learning",
+        "scrollHint": "Scroll Down"
+    },
+    "kopernik": [
+        "Developed and maintained 6+ responsive, multi-language corporate websites using HTML, CSS, JavaScript, and React.",
+        "Implemented custom email templates with HTML for marketing and communication purposes",
+        "Built a dedicated event management website for the company’s internal use, including UI design and frontend logic.",
+        "Ensured cross-browser compatibility and mobile responsiveness across all developed websites.",
+        "Contributed to the ongoing maintenance and updates of client projects, fixing bugs and optimizing performance."
+    ],
+    "kopernikInfo": {
+        "title": "Kopernik Software Agency",
+        "category": "Technology , Information and Media"
+    }
 }
