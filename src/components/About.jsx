@@ -46,8 +46,9 @@ const About = () => {
         }
     }, [scrollPosition]);
 
+    const zIndex = useTransform(scrollY, [700, 1250], [30, 0]);
     const opacity = useTransform(scrollY, [800, 1300], [1, 0]);
-    const zIndex = useTransform(scrollY, [700, 1400], [30, 0]);
+    //first container animations
     const scale1 = useTransform(scrollY, [1600, 1900], [1, 0.9]);
     const blur1 = useTransform(
         scrollY,
@@ -55,7 +56,13 @@ const About = () => {
         ['blur(0px)', 'blur(12px)']
     );
 
-    useMotionValueEvent(zIndex, 'change', (latest) => console.log(latest));
+    //second container animations
+    const scale2 = useTransform(scrollY, [2300, 2600], [1, 0.9]);
+    const blur2 = useTransform(
+        scrollY,
+        [2300, 2600],
+        ['blur(0px)', 'blur(12px)']
+    );
 
     return (
         <div>
@@ -71,7 +78,7 @@ const About = () => {
             </motion.p>
 
             <motion.div
-                className="bg-yellow-300 w-full h-screen overflow-hidden"
+                className="from-yellow-200 to-yellow-300 bg-gradient-to-t w-full h-screen overflow-hidden"
                 style={{
                     scale: scale1,
                     filter: blur1,
@@ -80,12 +87,16 @@ const About = () => {
             >
                 <Kopernik />
             </motion.div>
-            <div
+            <motion.div
                 ref={secondContainer}
-                className="bg-yellow-400 w-full h-screen z-10 overflow-hidden"
+                style={{
+                    scale: scale2,
+                    filter: blur2,
+                }}
+                className="from-yellow-200 to-yellow-300 bg-gradient-to-t w-full h-screen z-10 overflow-hidden shadow-lg"
             >
                 <Lfu />
-            </div>
+            </motion.div>
             <div
                 ref={thirdContainer}
                 className="bg-yellow-300 w-full h-screen z-20"

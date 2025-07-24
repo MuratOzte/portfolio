@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { FaHome, FaTwitter, FaGithub, FaCodepen } from 'react-icons/fa';
 
-const OrderedListUI = ({ company }) => {
+const OrderedListUI = ({ company, even }) => {
     const { t } = useTranslation();
 
     const messages = t(company.toString(), { returnObjects: true });
@@ -11,7 +11,9 @@ const OrderedListUI = ({ company }) => {
             {messages.map((msg, i) => (
                 <div
                     key={i}
-                    className="group flex items-center gap-4 py-2 px-4 hover:bg-yellow-400 transition cursor-pointer bg-transparent rounded-md"
+                    className={`group flex items-center gap-4 py-2 px-4  ${
+                        even ? 'hover:bg-yellow-500' : 'hover:bg-yellow-400'
+                    }  transition cursor-pointer bg-transparent rounded-md`}
                 >
                     <span className="text-[2rem] font-bold text-black opacity-5 group-hover:opacity-20 transition w-6 bg-transparent">
                         {i + 1}
