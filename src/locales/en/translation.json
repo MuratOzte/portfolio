@@ -1,6 +1,7 @@
 {
     "ui": {
-        "experiences": "My Experiences"
+        "experiences": "My Experiences",
+        "cat":"Category: "
     },
     "hero": {
         "greeting1": "Hi, I'm ",

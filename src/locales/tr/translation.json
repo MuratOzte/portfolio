@@ -1,6 +1,7 @@
 {
     "ui": {
-        "experiences": "Tecrübelerim"
+        "experiences": "Tecrübelerim",
+        "cat": "Kategori: "
     },
     "hero": {
         "greeting1": "Selam, Ben ",
