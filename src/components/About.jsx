@@ -46,7 +46,8 @@ const About = () => {
         }
     }, [scrollPosition]);
 
-    const opacity = useTransform(scrollY, [0, 600, 800, 1300], [0, 1, 1, 0]);
+    const opacity = useTransform(scrollY, [800, 1300], [1, 0]);
+    const zIndex = useTransform(scrollY, [700, 1400], [30, 0]);
     const scale1 = useTransform(scrollY, [1600, 1900], [1, 0.9]);
     const blur1 = useTransform(
         scrollY,
@@ -54,11 +55,13 @@ const About = () => {
         ['blur(0px)', 'blur(12px)']
     );
 
+    useMotionValueEvent(zIndex, 'change', (latest) => console.log(latest));
+
     return (
         <div>
             <motion.p
                 ref={titleContainer}
-                style={{ opacity }}
+                style={{ opacity, zIndex }}
                 className="bg-yellow-300 w-full h-screen overflow-hidden flex justify-center items-center text-8xl sticky top-0 z-30 tracking-wider uppercase font-bold drop-shadow-lg 
                "
             >

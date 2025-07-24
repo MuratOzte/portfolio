@@ -10,13 +10,13 @@ const Kopernik = () => {
     const { t } = useTranslation();
 
     return (
-        <div className="my-12 mx-8 bg-yellow-400 flex ">
-            <div className="flex flex-col w-1/2 bg-yellow-300">
+        <div className="my-12 mx-8 bg-transparent flex ">
+            <div className="flex flex-col w-1/2 bg-transparent">
                 <CompanyHeader
                     title={'Front-end Developer Intern'}
                     date={'02/2025 - 05/2025'}
                 />
-                <div className="bg-yellow-300 flex gap-5 justify-center mt-6">
+                <div className="bg-transparent flex gap-5 justify-center mt-6">
                     <div className="bg-transparent flex justify-center flex-col items-center">
                         <FaHtml5
                             className="bg-transparent text-orange-500"
@@ -54,11 +54,11 @@ const Kopernik = () => {
                         </span>
                     </div>
                 </div>
-                <CompanyList />
+                <CompanyList company={'kopernik'} />
             </div>
-            <div className="w-1/2 flex flex-col items-center justify-center bg-yellow-300 mt-24">
+            <div className="w-1/2 flex flex-col items-center justify-center bg-transparent mt-24">
                 <a
-                    className="bg-yellow-300"
+                    className="bg-transparent"
                     href="https://kopernik.com.tr/"
                     target="_blank"
                 >
@@ -67,36 +67,36 @@ const Kopernik = () => {
                         className="w-28 mb-6 rounded-full border border-white shadow-md hover:scale-105 transition-all duration-150 cursor-pointer"
                     />
                 </a>
-                <h1 className="bg-yellow-300 text-5xl font-bold text-gray-700">
+                <h1 className="bg-transparent text-5xl font-bold text-gray-700">
                     {t('kopernikInfo.title')}
                 </h1>
-                <div className="bg-yellow-300 flex justify-center items-center mt-4 space-x-2">
+                <div className="bg-transparent flex justify-center items-center mt-4 space-x-2">
                     <BiCategory
-                        className="bg-yellow-300 text-gray-700"
+                        className="bg-transparent text-gray-700"
                         size={36}
                     />
-                    <h1 className="bg-yellow-300 text-gray-700 font-semibold ">
-                        <span className="bg-yellow-300 font-bold">
+                    <h1 className="bg-transparent text-gray-700 font-semibold ">
+                        <span className="bg-transparent font-bold">
                             {t('ui.cat')}
                         </span>{' '}
                         {t('kopernikInfo.category')}
                     </h1>
                 </div>
-                <div className="bg-yellow-300 flex justify-center items-center mt-4 space-x-2">
+                <div className="bg-bg-transparent flex justify-center items-center mt-4 space-x-2">
                     <CgWebsite
-                        className="bg-yellow-300 text-gray-700"
+                        className="bg-bg-transparent text-gray-700"
                         size={36}
                     />
                     <a href="https://kopernik.com.tr/" target="_blank">
-                        <h1 className="bg-yellow-300 text-gray-700 font-semibold">
-                            <span className="bg-yellow-300 font-bold ">
+                        <h1 className="bg-transparent text-gray-700 font-semibold">
+                            <span className="bg-transparent font-bold ">
                                 Website :
                             </span>{' '}
                             https://kopernik.com.tr
                         </h1>
                     </a>
                 </div>
-                <div className="bg-yellow-300 flex justify-center items-center mt-4 space-x-2">
+                <div className="bg-transparent flex justify-center items-center mt-4 space-x-2">
                     <FaLinkedin
                         className="text-blue-500 bg-transparent"
                         size={36}
@@ -106,8 +106,8 @@ const Kopernik = () => {
                         href="https://www.linkedin.com/company/kopernik-tr/"
                         target="_blank"
                     >
-                        <h1 className="bg-yellow-300 text-gray-700 font-semibold">
-                            <span className="bg-yellow-300 font-bold ">
+                        <h1 className="bg-transparent text-gray-700 font-semibold">
+                            <span className="bg-transparent font-bold ">
                                 Linkedin :
                             </span>{' '}
                             https://www.linkedin.com/company/kopernik-tr
