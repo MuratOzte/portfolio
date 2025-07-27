@@ -19,5 +19,16 @@
     "kopernikInfo": {
         "title": "Kopernik Yazılım Ajansı",
         "category": "Teknoloji , Bilgi ve Medya"
+    },
+    "lfu": [
+        "React ve Tailwind CSS kullanarak sürükle-bırak özellikli bir form oluşturucu uygulaması geliştirdim; hem kullanıcı arayüzü tasarımını hem de işlevsel mantığını üstlendim.",
+        "Farklı ekran boyutları ve cihazlarda en iyi performansı sağlamak için duyarlı kullanıcı arayüzleri tasarladım ve uyguladım.",
+        "Tüm bileşenlerde temiz, tutarlı ve ölçeklenebilir stiller oluşturmak için Tailwind CSS kullandım.",
+        "Devam eden projelerin bakımına katkı sağladım; hataları düzelttim ve daha iyi performans için kodları yeniden yapılandırdım.",
+        "Ekip üyeleriyle birlikte kod incelemeleri yaptım ve gelen geri bildirimlere göre UI/UX iyileştirmeleri uyguladım."
+    ],
+    "lfuInfo": {
+        "category": "Sivil ve Sosyal Örgütler",
+        "title":"Let`s Future Up"
     }
 }

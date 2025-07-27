@@ -1,10 +1,10 @@
-import { FaCss3, FaHtml5, FaLinkedin, FaReact } from 'react-icons/fa';
-import CompanyHeader from './CompanyHeader';
-import CompanyList from './CompanyList';
-import { IoLogoJavascript } from 'react-icons/io';
-import { CgWebsite } from 'react-icons/cg';
 import { useTranslation } from 'react-i18next';
 import { BiCategory } from 'react-icons/bi';
+import { CgWebsite } from 'react-icons/cg';
+import { FaCss3, FaHtml5, FaLinkedin, FaReact } from 'react-icons/fa';
+import { IoLogoJavascript } from 'react-icons/io';
+import CompanyHeader from './CompanyHeader';
+import CompanyList from './CompanyList';
 
 const Kopernik = () => {
     const { t } = useTranslation();
@@ -35,6 +35,7 @@ const Kopernik = () => {
                             CSS
                         </span>
                     </div>
+
                     <div className="bg-transparent flex justify-center flex-col items-center">
                         <IoLogoJavascript
                             className="bg-transparent text-yellow-400"
@@ -64,7 +65,7 @@ const Kopernik = () => {
                 >
                     <img
                         src="https://media.licdn.com/dms/image/v2/D4D0BAQGug8UDNhQ2pw/company-logo_200_200/B4DZd3u_DZHkAI-/0/1750060496120/kopernik_tr_logo?e=1757548800&v=beta&t=dcOstwPhAjlCO_OKpcwaDcuy5n5cg5oz7rMx2vnRORs"
-                        className="w-28 mb-6 rounded-full border border-white shadow-md hover:scale-105 transition-all duration-150 cursor-pointer"
+                        className="w-28 mb-6 rounded-full border border-white shadow-md hover:scale-105 transition-all duration-150 cursor-pointer bg-transparent"
                     />
                 </a>
                 <h1 className="bg-transparent text-5xl font-bold text-gray-700">
@@ -87,7 +88,7 @@ const Kopernik = () => {
                         className="bg-transparent text-gray-700"
                         size={36}
                     />
-                    <a href="https://kopernik.com.tr/" target="_blank">
+                    <a href="https://kopernik.com.tr/" target="_blank" className='bg-transparent'>
                         <h1 className="bg-transparent text-gray-700 font-semibold">
                             <span className="bg-transparent font-bold ">
                                 Website :
@@ -105,6 +106,7 @@ const Kopernik = () => {
                     <a
                         href="https://www.linkedin.com/company/kopernik-tr/"
                         target="_blank"
+                        className='bg-transparent'
                     >
                         <h1 className="bg-transparent text-gray-700 font-semibold">
                             <span className="bg-transparent font-bold ">

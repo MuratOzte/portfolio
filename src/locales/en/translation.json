@@ -1,7 +1,7 @@
 {
     "ui": {
         "experiences": "My Experiences",
-        "cat":"Category: "
+        "cat": "Category: "
     },
     "hero": {
         "greeting1": "Hi, I'm ",
@@ -16,6 +16,17 @@
         "Ensured cross-browser compatibility and mobile responsiveness across all developed websites.",
         "Contributed to the ongoing maintenance and updates of client projects, fixing bugs and optimizing performance."
     ],
+    "lfu": [
+        "Developed a drag-and-drop form builder application using React and Tailwind CSS, handling both the UI design and functional logic.",
+        "Designed and implemented responsive user interfaces to ensure optimal performance across various screen sizes and devices.",
+        "Utilized Tailwind CSS to create clean, consistent, and scalable styles across all components.",
+        "Contributed to the maintenance and improvement of ongoing projects by fixing bugs and refactoring code for better performance.",
+        "Collaborated with team members to review code and implement UI/UX enhancements based on feedback."
+    ],
+    "lfuInfo": {
+        "title": "Let`s Future Up",
+        "category": "Civil and Social Organizations"
+    },
     "kopernikInfo": {
         "title": "Kopernik Software Agency",
         "category": "Technology , Information and Media"

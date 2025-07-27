@@ -5,6 +5,7 @@ import { IoLogoJavascript } from 'react-icons/io';
 import { CgWebsite } from 'react-icons/cg';
 import { useTranslation } from 'react-i18next';
 import { BiCategory } from 'react-icons/bi';
+import { RiTailwindCssFill } from 'react-icons/ri';
 
 const Kopernik = () => {
     const { t } = useTranslation();
@@ -14,7 +15,7 @@ const Kopernik = () => {
             <div className="flex flex-col w-1/2 bg-transparent">
                 <CompanyHeader
                     title={'Front-end Developer Intern'}
-                    date={'02/2025 - 05/2025'}
+                    date={'02/2025 - 04/2025'}
                 />
                 <div className="bg-transparent flex gap-5 justify-center mt-6">
                     <div className="bg-transparent flex justify-center flex-col items-center">
@@ -36,6 +37,15 @@ const Kopernik = () => {
                         </span>
                     </div>
                     <div className="bg-transparent flex justify-center flex-col items-center">
+                        <RiTailwindCssFill
+                            className="bg-transparent text-blue-500"
+                            size={64}
+                        />
+                        <span className="bg-transparent text-gray-600 font-semibold text-sm">
+                            Tailwind CSS
+                        </span>
+                    </div>
+                    <div className="bg-transparent flex justify-center flex-col items-center">
                         <IoLogoJavascript
                             className="bg-transparent text-yellow-400"
                             size={64}
@@ -54,7 +64,7 @@ const Kopernik = () => {
                         </span>
                     </div>
                 </div>
-                <CompanyList company={'kopernik'} even={true} />
+                <CompanyList company={'lfu'} even={true} />
             </div>
             <div className="w-1/2 flex flex-col items-center justify-center bg-transparent mt-24">
                 <a
@@ -68,7 +78,7 @@ const Kopernik = () => {
                     />
                 </a>
                 <h1 className="bg-transparent text-5xl font-bold text-gray-700">
-                    {t('kopernikInfo.title')}
+                    {t('lfuInfo.title')}
                 </h1>
                 <div className="bg-transparent flex justify-center items-center mt-4 space-x-2">
                     <BiCategory
@@ -79,15 +89,19 @@ const Kopernik = () => {
                         <span className="bg-transparent font-bold">
                             {t('ui.cat')}
                         </span>{' '}
-                        {t('kopernikInfo.category')}
+                        {t('lfuInfo.category')}
                     </h1>
                 </div>
-                <div className="bg-bg-transparent flex justify-center items-center mt-4 space-x-2">
+                <div className="bg-transparent flex justify-center items-center mt-4 space-x-2">
                     <CgWebsite
-                        className="bg-bg-transparent text-gray-700"
+                        className="bg-transparent text-gray-700"
                         size={36}
                     />
-                    <a href="https://kopernik.com.tr/" target="_blank">
+                    <a
+                        href="https://kopernik.com.tr/"
+                        target="_blank"
+                        className="bg-transparent"
+                    >
                         <h1 className="bg-transparent text-gray-700 font-semibold">
                             <span className="bg-transparent font-bold ">
                                 Website :
@@ -105,6 +119,7 @@ const Kopernik = () => {
                     <a
                         href="https://www.linkedin.com/company/kopernik-tr/"
                         target="_blank"
+                        className="bg-transparent"
                     >
                         <h1 className="bg-transparent text-gray-700 font-semibold">
                             <span className="bg-transparent font-bold ">
