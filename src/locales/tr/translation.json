@@ -16,6 +16,17 @@
         "Geliştirilen tüm web sitelerinde tarayıcı uyumluluğu ve mobil uyumluluğu sağladım.",
         "Müşteri projelerinin bakım ve güncellemelerine katkı sağladım; hata düzeltmeleri ve performans iyileştirmeleri gerçekleştirdim."
     ],
+    "wsolv": [
+        "Next.js ve Material UI kullanarak, temiz tasarım ve yüksek performansa odaklanan, duyarlı ve özellik açısından zengin bir dashboard geliştirdim.",
+        "Redux JS ile küresel durum yönetimi uygulayarak bileşenler arasında tutarlı veri akışı sağladım.",
+        "Facebook, Instagram ve LinkedIn API’lerini entegre ederek kullanıcı verilerini dashboard üzerinden alma ve yönetme işlevlerini gerçekleştirdim.",
+        "Express.js ile güvenli middleware yapıları geliştirdim; API rate limiting gibi önlemlerle arka uç işlemlerini yönettim ve uç noktaları korudum.",
+        "PostgreSQL veritabanına bağlantı kurarak CRUD işlemleri gerçekleştirdim ve ilişkisel veri yönetimini sağladım."
+    ],
+    "wsolvInfo": {
+        "title": "Wsolv",
+        "category": "Yazılım Geliştirme"
+    },
     "kopernikInfo": {
         "title": "Kopernik Yazılım Ajansı",
         "category": "Teknoloji , Bilgi ve Medya"
@@ -29,6 +40,6 @@
     ],
     "lfuInfo": {
         "category": "Sivil ve Sosyal Örgütler",
-        "title":"Let`s Future Up"
+        "title": "Let`s Future Up"
     }
 }

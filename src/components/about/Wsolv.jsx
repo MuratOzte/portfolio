@@ -76,21 +76,21 @@ const Wsolv = () => {
                         </span>
                     </div>
                 </div>
-                <CompanyList company={'kopernik'} even={false} />
+                <CompanyList company={'wsolv'} even={false} />
             </div>
             <div className="w-1/2 flex flex-col items-center justify-center bg-transparent mt-24">
                 <a
                     className="bg-transparent"
-                    href="https://kopernik.com.tr/"
+                    href="https://wsolv.com/"
                     target="_blank"
                 >
                     <img
-                        src="https://media.licdn.com/dms/image/v2/D4D0BAQGug8UDNhQ2pw/company-logo_200_200/B4DZd3u_DZHkAI-/0/1750060496120/kopernik_tr_logo?e=1757548800&v=beta&t=dcOstwPhAjlCO_OKpcwaDcuy5n5cg5oz7rMx2vnRORs"
+                        src="https://media.licdn.com/dms/image/v2/D4D0BAQF0Up-lp9JbLg/company-logo_200_200/B4DZZpAsLMGgAM-/0/1745518515676/wsolv_logo?e=1756944000&v=beta&t=Ul4cUZyskn1Qo0Nkyn4YEHdMoVhuT7Ch370JXBZ5nHY"
                         className="w-28 mb-6 rounded-full border border-white shadow-md hover:scale-105 transition-all duration-150 cursor-pointer bg-transparent"
                     />
                 </a>
                 <h1 className="bg-transparent text-5xl font-bold text-gray-700">
-                    {t('kopernikInfo.title')}
+                    {t('wsolvInfo.title')}
                 </h1>
                 <div className="bg-transparent flex justify-center items-center mt-4 space-x-2">
                     <BiCategory
@@ -101,7 +101,7 @@ const Wsolv = () => {
                         <span className="bg-transparent font-bold">
                             {t('ui.cat')}
                         </span>{' '}
-                        {t('kopernikInfo.category')}
+                        {t('wsolv.category')}
                     </h1>
                 </div>
                 <div className="bg-transparent flex justify-center items-center mt-4 space-x-2">
@@ -110,7 +110,7 @@ const Wsolv = () => {
                         size={36}
                     />
                     <a
-                        href="https://kopernik.com.tr/"
+                        href="https://wsolv.com/"
                         target="_blank"
                         className="bg-transparent"
                     >
@@ -118,7 +118,7 @@ const Wsolv = () => {
                             <span className="bg-transparent font-bold ">
                                 Website :
                             </span>{' '}
-                            https://kopernik.com.tr
+                            https://wsolv.com
                         </h1>
                     </a>
                 </div>

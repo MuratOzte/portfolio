@@ -98,7 +98,7 @@ const Kopernik = () => {
                         size={36}
                     />
                     <a
-                        href="https://letsfutureup.com/"
+                        href="https://wsolv.com/"
                         target="_blank"
                         className="bg-transparent"
                     >
@@ -106,7 +106,7 @@ const Kopernik = () => {
                             <span className="bg-transparent font-bold ">
                                 Website :
                             </span>{' '}
-                            https://letsfutureup.com/
+                            https://wsolv.com/
                         </h1>
                     </a>
                 </div>
@@ -117,7 +117,7 @@ const Kopernik = () => {
                         enableBackground={true}
                     />
                     <a
-                        href="https://www.linkedin.com/company/let-s-futureup/"
+                        href="https://www.linkedin.com/company/wsolv"
                         target="_blank"
                         className="bg-transparent"
                     >
@@ -125,7 +125,7 @@ const Kopernik = () => {
                             <span className="bg-transparent font-bold ">
                                 Linkedin :
                             </span>{' '}
-                            https://www.linkedin.com/company/let-s-futureup/
+                            https://www.linkedin.com/company/wsolv
                         </h1>
                     </a>
                 </div>

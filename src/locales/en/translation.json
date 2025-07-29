@@ -23,6 +23,17 @@
         "Contributed to the maintenance and improvement of ongoing projects by fixing bugs and refactoring code for better performance.",
         "Collaborated with team members to review code and implement UI/UX enhancements based on feedback."
     ],
+    "wsolv": [
+        "Built a responsive and feature-rich dashboard using Next.js and Material UI, focusing on clean design and performance.",
+        "Implemented global state management with Redux JS to ensure consistent data flow across components.",
+        "Integrated Facebook, Instagram, and LinkedIn APIs to fetch and manage user data within the dashboard.",
+        "Developed secure Express.js middleware, including API rate limiting, to handle backend logic and protect endpoints.",
+        "Connected to a PostgreSQL database to perform CRUD operations and manage relational data effectively."
+    ],
+    "wsolvInfo":{
+        "title":"Wsolv",
+        "category":"Software Developing"
+    },
     "lfuInfo": {
         "title": "Let`s Future Up",
         "category": "Civil and Social Organizations"
