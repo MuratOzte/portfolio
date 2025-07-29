@@ -16,6 +16,7 @@ import CompanyHeader from './about/CompanyHeader';
 import CompanyList from './about/CompanyList';
 import Kopernik from './about/Kopernik';
 import Lfu from './about/Lfu';
+import Wsolv from './about/wsolv';
 
 const About = () => {
     const { scrollY } = useScroll();
@@ -99,8 +100,10 @@ const About = () => {
             </motion.div>
             <div
                 ref={thirdContainer}
-                className="bg-yellow-300 w-full h-screen z-20"
-            ></div>
+                className="from-yellow-200 to-yellow-300 bg-gradient-to-t w-full h-screen z-20 overflow-hidden shadow-lg"
+            >
+                <Wsolv />
+            </div>
         </div>
     );
 };
