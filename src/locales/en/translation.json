@@ -30,9 +30,17 @@
         "Developed secure Express.js middleware, including API rate limiting, to handle backend logic and protect endpoints.",
         "Connected to a PostgreSQL database to perform CRUD operations and manage relational data effectively."
     ],
-    "wsolvInfo":{
-        "title":"Wsolv",
-        "category":"Software Developing"
+    "baykar": [
+        "Developed pages for an internal test management application using React, Next.js, and Tailwind CSS.",
+        "Implemented an event application form using jQuery, HTML, and Bootstrap for collecting participant data.",
+        "Built a 3D tablet game with Three.js and Next.js for children to interact with during events.",
+        "Designed the game flow so that children can paint airplanes, add stickers, and write their names on them via the tablet.",
+        "Integrated the game with a large TV screen so that the customized airplanes appear and fly on the big display after creation."
+    ],
+
+    "wsolvInfo": {
+        "title": "Wsolv",
+        "category": "Software Developing"
     },
     "lfuInfo": {
         "title": "Let`s Future Up",
@@ -41,5 +49,9 @@
     "kopernikInfo": {
         "title": "Kopernik Software Agency",
         "category": "Technology , Information and Media"
+    },
+    "baykarInfo": {
+        "title": "Baykar Technology",
+        "category": "Defense and aviation technologies"
     }
 }

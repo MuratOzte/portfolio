@@ -40,7 +40,7 @@ const LanguageToggle = () => {
                     style={{
                         backgroundImage: `url(${
                             isEnglish
-                                ? 'https://m.media-amazon.com/images/I/61dHFpZmRSL._AC_UF1000,1000_QL80_.jpg'
+                                ? 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/English_language.svg/1200px-English_language.svg.png'
                                 : 'https://i.hizliresim.com/ltsw1d9.jpg'
                         })`,
                     }}

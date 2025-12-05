@@ -1,143 +1,172 @@
 import { useTranslation } from 'react-i18next';
-import { BiCategory } from 'react-icons/bi';
+import { BiCategory, BiLogoJquery, BiLogoRedux } from 'react-icons/bi';
 import { CgWebsite } from 'react-icons/cg';
-import { FaCss3, FaHtml5, FaLinkedin, FaReact } from 'react-icons/fa';
-import { IoLogoJavascript } from 'react-icons/io';
+import { FaLinkedin, FaBootstrap } from 'react-icons/fa';
+import {
+    SiNextdotjs,
+    SiTailwindcss,
+    SiThreedotjs,
+    SiReact,
+} from 'react-icons/si';
 import CompanyHeader from './CompanyHeader';
 import CompanyList from './CompanyList';
-import { SiNextdotjs } from 'react-icons/si';
-import { BiLogoPostgresql } from 'react-icons/bi';
-import { SiExpress } from "react-icons/si";
 
-const Wsolv = () => {
+const Baykar = () => {
     const { t } = useTranslation();
 
     return (
-        <div className="my-12 mx-8 bg-transparent flex ">
+        <div className="my-12 mx-8 bg-transparent flex">
+            {/* Left side: position + tech stack */}
             <div className="flex flex-col w-1/2 bg-transparent">
                 <CompanyHeader
-                    title={'Full-Stack Developer Intern'}
-                    date={'11/2024 - 02/2025'}
+                    title={'Front-end Developer Intern'}
+                    date={'07/2025 - 09/2025'}
                 />
-                <div className="bg-transparent flex gap-5 justify-center mt-6">
+
+                <div className="bg-transparent flex flex-wrap gap-5 justify-center mt-6">
                     <div className="bg-transparent flex justify-center flex-col items-center">
-                        <FaHtml5
-                            className="bg-transparent text-orange-500"
+                        <SiReact
+                            className="bg-transparent text-sky-400"
                             size={64}
                         />
                         <span className="bg-transparent text-gray-600 font-semibold text-sm">
-                            HTML
-                        </span>
-                    </div>
-                    <div className="bg-transparent flex justify-center flex-col items-center">
-                        <FaCss3
-                            className="bg-transparent text-blue-500"
-                            size={64}
-                        />
-                        <span className="bg-transparent text-gray-600 font-semibold text-sm">
-                            CSS
+                            React
                         </span>
                     </div>
 
                     <div className="bg-transparent flex justify-center flex-col items-center">
-                        <IoLogoJavascript
-                            className="bg-transparent text-yellow-400"
-                            size={64}
-                        />
-                        <span className="bg-transparent text-gray-600 font-semibold text-sm">
-                            Javascript
-                        </span>
-                    </div>
-                    <div className="bg-transparent flex justify-center flex-col items-center">
                         <SiNextdotjs
-                            className="bg-transparent text-black"
+                            className="bg-transparent text-gray-900"
                             size={64}
                         />
                         <span className="bg-transparent text-gray-600 font-semibold text-sm">
                             Next.js
                         </span>
                     </div>
+
                     <div className="bg-transparent flex justify-center flex-col items-center">
-                        <SiExpress
-                            className="bg-transparent text-black"
+                        <SiTailwindcss
+                            className="bg-transparent text-sky-500"
                             size={64}
                         />
                         <span className="bg-transparent text-gray-600 font-semibold text-sm">
-                            express.js
+                            Tailwind CSS
                         </span>
                     </div>
+
                     <div className="bg-transparent flex justify-center flex-col items-center">
-                        <BiLogoPostgresql
-                            className="bg-transparent text-blue-400"
+                        <SiThreedotjs
+                            className="bg-transparent text-emerald-500"
                             size={64}
                         />
                         <span className="bg-transparent text-gray-600 font-semibold text-sm">
-                            PostgreSQL
+                            Three.js
+                        </span>
+                    </div>
+
+                    <div className="bg-transparent flex justify-center flex-col items-center">
+                        <BiLogoJquery
+                            className="bg-transparent text-sky-600"
+                            size={64}
+                        />
+                        <span className="bg-transparent text-gray-600 font-semibold text-sm">
+                            jQuery
+                        </span>
+                    </div>
+
+                    <div className="bg-transparent flex justify-center flex-col items-center">
+                        <FaBootstrap
+                            className="bg-transparent text-purple-600"
+                            size={64}
+                        />
+                        <span className="bg-transparent text-gray-600 font-semibold text-sm">
+                            Bootstrap
+                        </span>
+                    </div>
+
+                    <div className="bg-transparent flex justify-center flex-col items-center">
+                        <BiLogoRedux
+                            className="bg-transparent text-purple-500"
+                            size={64}
+                        />
+                        <span className="bg-transparent text-gray-600 font-semibold text-sm">
+                            Redux
                         </span>
                     </div>
                 </div>
-                <CompanyList company={'wsolv'} even={false} />
+
+                {/* Baykar maddeleri için translation.json içindeki "baykar" key'i kullanılıyor */}
+                <CompanyList company={'baykar'} even={true} />
             </div>
+
+            {/* Right side: company info */}
             <div className="w-1/2 flex flex-col items-center justify-center bg-transparent mt-24">
                 <a
                     className="bg-transparent"
-                    href="https://wsolv.com/"
+                    href="https://baykartech.com/"
                     target="_blank"
+                    rel="noreferrer"
                 >
                     <img
-                        src="https://media.licdn.com/dms/image/v2/D4D0BAQF0Up-lp9JbLg/company-logo_200_200/B4DZZpAsLMGgAM-/0/1745518515676/wsolv_logo?e=1756944000&v=beta&t=Ul4cUZyskn1Qo0Nkyn4YEHdMoVhuT7Ch370JXBZ5nHY"
+                        src="https://media.licdn.com/dms/image/v2/C4E0BAQEcA5bCmGhuyA/company-logo_200_200/company-logo_200_200/0/1631321447936/baykar_technologies_logo?e=1757548800&v=beta&t=sQy_HC9T8zB9Xy7pZ9Fb3cra8rZwGWu4qgdr-9THk9E"
                         className="w-28 mb-6 rounded-full border border-white shadow-md hover:scale-105 transition-all duration-150 cursor-pointer bg-transparent"
+                        alt="Baykar Logo"
                     />
                 </a>
-                <h1 className="bg-transparent text-5xl font-bold text-gray-700">
-                    {t('wsolvInfo.title')}
+
+                <h1 className="bg-transparent text-5xl font-bold text-gray-700 text-center">
+                    {t('baykarInfo.title')}
                 </h1>
+
                 <div className="bg-transparent flex justify-center items-center mt-4 space-x-2">
                     <BiCategory
                         className="bg-transparent text-gray-700"
                         size={36}
                     />
-                    <h1 className="bg-transparent text-gray-700 font-semibold ">
+                    <h1 className="bg-transparent text-gray-700 font-semibold">
                         <span className="bg-transparent font-bold">
                             {t('ui.cat')}
                         </span>{' '}
-                        {t('wsolvInfo.category')}
+                        {t('baykarInfo.category')}
                     </h1>
                 </div>
+
                 <div className="bg-transparent flex justify-center items-center mt-4 space-x-2">
                     <CgWebsite
                         className="bg-transparent text-gray-700"
                         size={36}
                     />
                     <a
-                        href="https://wsolv.com/"
+                        href="https://baykartech.com/"
                         target="_blank"
+                        rel="noreferrer"
                         className="bg-transparent"
                     >
                         <h1 className="bg-transparent text-gray-700 font-semibold">
-                            <span className="bg-transparent font-bold ">
+                            <span className="bg-transparent font-bold">
                                 Website :
                             </span>{' '}
-                            https://wsolv.com
+                            https://baykartech.com
                         </h1>
                     </a>
                 </div>
+
                 <div className="bg-transparent flex justify-center items-center mt-4 space-x-2">
                     <FaLinkedin
                         className="text-blue-500 bg-transparent"
                         size={36}
-                        enableBackground={true}
                     />
                     <a
-                        href="https://www.linkedin.com/company/kopernik-tr/"
+                        href="https://www.linkedin.com/company/baykar"
                         target="_blank"
+                        rel="noreferrer"
                         className="bg-transparent"
                     >
                         <h1 className="bg-transparent text-gray-700 font-semibold">
-                            <span className="bg-transparent font-bold ">
+                            <span className="bg-transparent font-bold">
                                 Linkedin :
                             </span>{' '}
-                            https://www.linkedin.com/company/kopernik-tr
+                            https://www.linkedin.com/company/baykar
                         </h1>
                     </a>
                 </div>
@@ -146,4 +175,4 @@ const Wsolv = () => {
     );
 };
 
-export default Wsolv;
+export default Baykar;

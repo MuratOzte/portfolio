@@ -1,45 +1,56 @@
 {
     "ui": {
-        "experiences": "Tecrübelerim",
+        "experiences": "Deneyimlerim",
         "cat": "Kategori: "
     },
     "hero": {
-        "greeting1": "Selam, Ben ",
+        "greeting1": "Merhaba, ben ",
         "greeting2": "Murat",
-        "paragraph": "Web ve mobil uygulamalar geliştiren, aynı zamanda makine öğrenimi üzerinde çalışan bir yazılım geliştiriciyim",
+        "paragraph": "Web ve mobil uygulamalar geliştiren, aynı zamanda makine öğrenmesi üzerine çalışan bir yazılım geliştiricisiyim",
         "scrollHint": "Aşağı Kaydır"
     },
     "kopernik": [
-        "HTML, CSS, JavaScript ve React kullanarak 6'dan fazla responsive ve çok dilli kurumsal web sitesi geliştirdim ve bakımını sağladım.",
-        "Pazarlama ve iletişim amaçlı özel HTML e-posta şablonları oluşturdum.",
-        "Şirketin dahili kullanımı için etkinlik yönetimi web sitesi tasarlayıp geliştirdim; kullanıcı arayüzü ve frontend mantığını oluşturdum.",
-        "Geliştirilen tüm web sitelerinde tarayıcı uyumluluğu ve mobil uyumluluğu sağladım.",
-        "Müşteri projelerinin bakım ve güncellemelerine katkı sağladım; hata düzeltmeleri ve performans iyileştirmeleri gerçekleştirdim."
+        "HTML, CSS, JavaScript ve React kullanarak 6'dan fazla duyarlı, çok dilli kurumsal web sitesi geliştirdim ve bakımını yaptım.",
+        "Pazarlama ve iletişim amaçlı HTML ile özel e-posta şablonları hazırladım.",
+        "Şirketin dahili kullanımı için, arayüz tasarımı ve frontend mantığını üstlendiğim bir etkinlik yönetim sitesi geliştirdim.",
+        "Tüm geliştirdiğim sitelerde tarayıcılar arası uyumluluk ve mobil duyarlılık sağladım.",
+        "Müşteri projelerinin bakım ve güncelleme süreçlerine katkı sağlayarak hata düzeltmeleri yaptım ve performans iyileştirmeleri uyguladım."
+    ],
+    "lfu": [
+        "React ve Tailwind CSS kullanarak sürükle-bırak form oluşturucu bir uygulama geliştirdim; hem arayüz tasarımını hem de işlevsel mantığını üstlendim.",
+        "Farklı ekran boyutları ve cihazlarda iyi çalışan duyarlı kullanıcı arayüzleri tasarladım ve kodladım.",
+        "Tüm bileşenlerde temiz, tutarlı ve ölçeklenebilir stiller oluşturmak için Tailwind CSS kullandım.",
+        "Devam eden projelerin bakım ve iyileştirme süreçlerine hata giderme ve performans odaklı refaktör çalışmalarıyla katkı sağladım.",
+        "Ekip arkadaşlarıyla birlikte kod incelemeleri yaparak gelen geri bildirimlere göre UI/UX iyileştirmeleri uyguladım."
     ],
     "wsolv": [
-        "Next.js ve Material UI kullanarak, temiz tasarım ve yüksek performansa odaklanan, duyarlı ve özellik açısından zengin bir dashboard geliştirdim.",
-        "Redux JS ile küresel durum yönetimi uygulayarak bileşenler arasında tutarlı veri akışı sağladım.",
-        "Facebook, Instagram ve LinkedIn API’lerini entegre ederek kullanıcı verilerini dashboard üzerinden alma ve yönetme işlevlerini gerçekleştirdim.",
-        "Express.js ile güvenli middleware yapıları geliştirdim; API rate limiting gibi önlemlerle arka uç işlemlerini yönettim ve uç noktaları korudum.",
-        "PostgreSQL veritabanına bağlantı kurarak CRUD işlemleri gerçekleştirdim ve ilişkisel veri yönetimini sağladım."
+        "Next.js ve Material UI kullanarak, temiz tasarım ve performansa odaklanan duyarlı ve özellikli bir dashboard geliştirdim.",
+        "Bileşenler arasında tutarlı veri akışı sağlamak için Redux JS ile global state yönetimi kurdum.",
+        "Facebook, Instagram ve LinkedIn API'lerini entegre ederek dashboard içinde kullanıcı verilerinin çekilmesini ve yönetilmesini sağladım.",
+        "Backend mantığı ve uç noktaların korunması için API rate limiting de içeren güvenli Express.js middleware katmanları geliştirdim.",
+        "PostgreSQL veritabanına bağlanarak CRUD operasyonları ile ilişkisel verilerin etkin biçimde yönetilmesini sağladım."
+    ],
+    "baykar": [
+        "React, Next.js ve Tailwind CSS kullanarak şirket içi test yönetim uygulaması için sayfalar geliştirdim.",
+        "Katılımcı verilerini toplamak için jQuery, HTML ve Bootstrap ile etkinlik başvuru formu geliştirdim.",
+        "Etkinliklerde çocukların kullanması için Three.js ve Next.js ile 3D bir tablet oyunu geliştirdim.",
+        "Oyunun akışını; çocukların tablette uçakları boyayıp sticker ekleyebildiği ve isimlerini yazabildiği şekilde tasarladım.",
+        "Tablette tasarlanan uçakların büyük bir televizyon ekranında görünmesini ve ekranda uçmaya başlamasını sağlayacak entegrasyonu yaptım."
     ],
     "wsolvInfo": {
         "title": "Wsolv",
         "category": "Yazılım Geliştirme"
     },
+    "lfuInfo": {
+        "title": "Let`s Future Up",
+        "category": "Sivil ve Sosyal Organizasyonlar"
+    },
     "kopernikInfo": {
         "title": "Kopernik Yazılım Ajansı",
-        "category": "Teknoloji , Bilgi ve Medya"
+        "category": "Teknoloji, Bilgi ve Medya"
     },
-    "lfu": [
-        "React ve Tailwind CSS kullanarak sürükle-bırak özellikli bir form oluşturucu uygulaması geliştirdim; hem kullanıcı arayüzü tasarımını hem de işlevsel mantığını üstlendim.",
-        "Farklı ekran boyutları ve cihazlarda en iyi performansı sağlamak için duyarlı kullanıcı arayüzleri tasarladım ve uyguladım.",
-        "Tüm bileşenlerde temiz, tutarlı ve ölçeklenebilir stiller oluşturmak için Tailwind CSS kullandım.",
-        "Devam eden projelerin bakımına katkı sağladım; hataları düzelttim ve daha iyi performans için kodları yeniden yapılandırdım.",
-        "Ekip üyeleriyle birlikte kod incelemeleri yaptım ve gelen geri bildirimlere göre UI/UX iyileştirmeleri uyguladım."
-    ],
-    "lfuInfo": {
-        "category": "Sivil ve Sosyal Örgütler",
-        "title": "Let`s Future Up"
+    "baykarInfo": {
+        "title": "Baykar Teknoloji",
+        "category": "Savunma ve havacılık teknolojileri"
     }
 }
