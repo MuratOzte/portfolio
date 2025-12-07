@@ -53,5 +53,33 @@
     "baykarInfo": {
         "title": "Baykar Technology",
         "category": "Defense and aviation technologies"
+    },
+    "skills": {
+        "title": "Skills",
+        "frontendTitle": "Frontend",
+        "backendTitle": "Backend",
+        "databaseTitle": "Databases",
+        "toolsTitle": "Tools & Others",
+        "languagesTitle": "Languages",
+
+        "frontend": [
+            "JavaScript",
+            "TypeScript",
+            "HTML",
+            "CSS / SCSS",
+            "React.js",
+            "Next.js",
+            "React Native",
+            "Tailwind CSS",
+            "Material UI",
+            "jQuery",
+            "Bootstrap",
+            "Three.js",
+            "Redux"
+        ],
+        "backend": ["Node.js", "Express.js", "ASP.NET"],
+        "databases": ["PostgreSQL", "SQL", "NoSQL"],
+        "tools": ["Git & GitHub", "REST API", "Responsive Design"],
+        "languages": ["Turkish (Native)", "English (B2)"]
     }
 }

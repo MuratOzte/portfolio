@@ -52,5 +52,32 @@
     "baykarInfo": {
         "title": "Baykar Teknoloji",
         "category": "Savunma ve havacılık teknolojileri"
+    },
+    "skills": {
+        "title": "Yetenekler",
+        "frontendTitle": "Frontend",
+        "backendTitle": "Backend",
+        "databaseTitle": "Veritabanları",
+        "toolsTitle": "Araçlar ve Diğer",
+        "languagesTitle": "Diller",
+
+        "frontend": [
+            "JavaScript",
+            "TypeScript",
+            "HTML",
+            "CSS / SCSS",
+            "React.js",
+            "Next.js",
+            "React Native",
+            "Tailwind CSS",
+            "Material UI",
+            "jQuery",
+            "Bootstrap",
+            "Three.js"
+        ],
+        "backend": ["Node.js", "Express.js", "ASP.NET"],
+        "databases": ["PostgreSQL", "SQL", "NoSQL"],
+        "tools": ["Git & GitHub", "REST API", "Responsive tasarım"],
+        "languages": ["Türkçe (Ana dil)", "İngilizce (B2)"]
     }
 }

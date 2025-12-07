@@ -11,7 +11,7 @@ import {
     Works,
     StarsCanvas,
 } from './components';
-
+import Skills from './components/skils/Skills';
 
 function App() {
     return (
@@ -24,7 +24,9 @@ function App() {
                 <div>
                     <About />
                 </div>
-                <Experience />
+                <div className='w-full bg-transparent' >
+                    <Skills />
+                </div>
                 <Tech />
                 <Works />
                 <Feedbacks />
