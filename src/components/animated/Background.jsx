@@ -76,6 +76,8 @@ void main(){
     intensity += (rand(gl_FragCoord.xy + uTime) - 0.5) * uNoise;
     intensity = clamp(intensity, 0.0, 1.0);
 
+    intensity = pow(intensity, 0.9);   // 0.5–0.8 arası dene
+
     // sabit renk: #375141
     vec3 effectColor = vec3(55.0/255.0, 81.0/255.0, 65.0/255.0);
 

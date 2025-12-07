@@ -80,6 +80,6 @@
         "backend": ["Node.js", "Express.js", "ASP.NET"],
         "databases": ["PostgreSQL", "SQL", "NoSQL"],
         "tools": ["Git & GitHub", "REST API", "Responsive Design"],
-        "languages": ["Turkish (Native)", "English (B2)"]
+        "languages": ["Turkish (Native)", "English (B1)"]
     }
 }

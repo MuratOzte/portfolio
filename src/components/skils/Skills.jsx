@@ -40,7 +40,7 @@ const Skills = () => {
         >
             {/* Particles background */}
             <div className="absolute inset-0 z-0 bg-transparent">
-                <DarkVeil />
+                <DarkVeil  />
             </div>
 
             {/* İçerik */}
